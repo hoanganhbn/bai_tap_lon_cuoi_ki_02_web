@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sản Phẩm</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/trang_chu.css">
+    <link rel="stylesheet" href="css/the_loai.css">
+    <link rel="stylesheet" href="css/san_pham.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/css_gio_hang.css">
+    <link rel="stylesheet" href="css/css_thanh_tim_kiem.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="icon" href="/images/icons/futbol-regular.svg">
+
+    </head>
+  <body>
+    <!-- navbar -->
+      <nav>
+        <div class="logo">
+          <h3><a href="football_shop.html" class="logo-name">Football Shop</a></h3>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="trang_chu.html">Trang Chủ</a></li>
+          <li><a href="san_pham.html">Sản Phẩm</a></li>
+          <li><a href="the_loai.html">Thể Loại</a></li>
+          <li><a href="lien_he.html">Liên Hệ</a></li>
+          <li><a href="gio_hang.html">Giỏ Hàng</a></li>
+          <li><a href="login.html" id="login">LOGIN</a></li>
+        </ul>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Tìm kiếm...">
+            <button type="button" onclick="searchFunction()">Tìm kiếm</button>
+        </div>
+
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    <!-- navbar -->
+      <h2 class="main-head-of-products">Đa Dạng Các Loại Sản Phẩm<br>
+        <span class="colored-word-bigger-size">QUẦN ÁO / GIÀY ĐÁ BÓNG / PHỤ KIỆN</span>
+      </h2>
+
+      <br>
+      <div class="bg-images">
+        <a href="san_pham.html"><img src="images/products-img/ronaldo_messi.jpg" alt=""></a>
+      </div>
+
+      <center><p class="msg-ps">
+        <span class="colored-word" style="font-weight: bold;">Chọn</span> sản phẩm để thêm vào danh sách mua hàng.
+        <br>Hãy lưới xuống dưới để chọn sản phẩm cho <span><a href="gio_hang.html" class="colored-word" style="font-weight: bold;">GIỎ HÀNG</a></span> của bạn.
+      </p></center>
+
+      <div>
+        <h1>QUẦN ÁO <span class="colored-word">THEO CÂU LẠC BỘ</span></h1>
+        <center><hr class="products-hr"></center>
+        <br><br>
+
+        <div class="product_css">
+          <div class="product">
+              <img src="images/products-img/clb/clb_01.jpg" id="InterMiami" onclick="add(this.id)">
+              <p>Inter Miami</p>
+              <p class="price">200.000 VNĐ</p>
+          </div>
+          <div class="product">
+              <img src="images/products-img/clb/clb_02.jpg" id="Paris_Saint_Germain" alt="" onclick="add(this.id)">
+              <p>Paris Saint-Germain</p>
+              <p class="price">190.000 VNĐ</p>
+          </div>
+          <div class="product">
+              <img src="images/products-img/clb/clb_03.jpg" id="Barcelona" alt="" onclick="add(this.id)">
+              <p>Barcelona Sân Khách</p>
+              <p class="price">220.000 VNĐ</p>
+          </div>
+          <div class="product">
+              <img src="images/products-img/clb/clb_04.jpg" id="Liverpool_SanKhach" alt="" onclick="add(this.id)">
+              <p>Liverpool Sân Khách</p>
+              <p class="price">250.000 VNĐ</p>
+          </div>
+          <div class="product">
+              <img src="images/products-img/clb/clb_05.jpg" id="Liverpool_SanNha" alt="" onclick="add(this.id)">
+              <p>Liverpool Sân Nhà</p>
+              <p class="price">250.000 VNĐ</p>
+          </div>
+          <div class="product">
+              <img src="images/products-img/clb/clb_06.jpg" id="AC_Milan_SanNha" alt="" onclick="add(this.id)">
+              <p>AC Milan Sân Nhà</p>
+              <p class="price">240.000 VNĐ</p>
+          </div>
+          <div class="product">
+              <img src="images/products-img/clb/clb_07.jpg" id="Asenal_SanNha" alt="" onclick="add(this.id)">
+              <p>Asenal Sân Nhà</p>
+              <p class="price">230.000 VNĐ</p>
+          </div>
+          <div class="product">
+              <img src="images/products-img/clb/clb_08.jpg" id="ManchesterCity" alt="" onclick="add(this.id)">
+              <p>Manchester City</p>
+              <p class="price">280.000 VNĐ</p>
+          </div>
+          <div class="product">
+              <img src="images/products-img/clb/clb_09.jpg" id="BorussiaDortmund" alt="" onclick="add(this.id)">
+              <p>Borussia Dortmund</p>
+              <p class="price">220.000 VNĐ</p>
+          </div>
+          <div class="product">
+              <img src="images/products-img/clb/clb_10.jpg" id="InterMiami_SanNha" alt="" onclick="add(this.id)">
+              <p>Inter Miami Sân Nhà</p>
+              <p class="price">250.000 VNĐ</p>
+          </div>
+          <div class="product">
+              <img src="images/products-img/clb/clb_11.jpg" id="Barcelona_SanNha" alt="" onclick="add(this.id)">
+              <p>Barcelona Sân Nhà</p>
+              <p class="price">290.000 VNĐ</p>
+          </div>
+          <div class="product">
+              <img src="images/products-img/clb/clb_12.jpg" id="Juventus_SanNha" alt="" onclick="add(this.id)">
+              <p>Juventus Sân Nhà</p>
+              <p class="price">240.000 VNĐ</p>
+          </div>
+          <div class="product">
+              <img src="images/products-img/clb/clb_13.jpg" id="Juventus_SanKhach" alt="" onclick="add(this.id)">
+              <p>Juventus Sân Khách</p>
+              <p class="price">240.000 VNĐ</p>
+          </div>
+          <div class="product">
+              <img src="images/products-img/clb/clb_14.jpg" id="ManchesterUnited_SanKhach" alt="" onclick="add(this.id)">
+              <p>Manchester United Sân Khách</p>
+              <p class="price">280.000 VNĐ</p>
+          </div>
+          <div class="product">
+              <img src="images/products-img/clb/clb_15.jpg" id="Paris_Saint_Germain_SanKhach" alt="" onclick="add(this.id)">
+              <p>Paris Saint-Germain Sân Khách</p>
+              <p class="price">260.000 VNĐ</p>
+          </div>
+          <div class="product">
+              <img src="images/products-img/clb/clb_16.jpg" id="Liverpool_SanTap" alt="" onclick="add(this.id)">
+              <p>Liverpool Sân Tập</p>
+              <p class="price">270.000 VNĐ</p>
+          </div>
+        </div>
+
+        <div>
+          <h1>QUẦN ÁO <span class="colored-word">THEO ĐỘI TUYỂN</span></h1>
+          <center><hr class="products-hr"></center>
+          <br><br>
+  
+          <div class="product_css">
+            <div class="product">
+                <img src="images/products-img/đội_tuyển/đội_tuyển_01.jpg" id="Belgium_SanNha" onclick="add(this.id)">
+                <p>Belgium Sân Nhà</p>
+                <p class="price">230.000 VNĐ</p>
+            </div>
+            <div class="product">
+                <img src="images/products-img/đội_tuyển/đội_tuyển_02.jpg" id="Portugal_SanKhach" alt="" onclick="add(this.id)">
+                <p>Portugal Sân Khách</p>
+                <p class="price">170.000 VNĐ</p>
+            </div>
+            <div class="product">
+                <img src="images/products-img/đội_tuyển/đội_tuyển_03.jpg" id="Germany_SanNha" alt="" onclick="add(this.id)">
+                <p>Germany Sân Nhà</p>
+                <p class="price">180.000 VNĐ</p>
+            </div>
+            <div class="product">
+                <img src="images/products-img/đội_tuyển/đội_tuyển_04.jpg" id="Italia_SanNha" alt="" onclick="add(this.id)">
+                <p>Italia Sân Nhà</p>
+                <p class="price">220.000 VNĐ</p>
+            </div>
+            <div class="product">
+                <img src="images/products-img/đội_tuyển/đội_tuyển_05.jpg" id="Spain_SanNha" alt="" onclick="add(this.id)">
+                <p>Spain Sân Nhà</p>
+                <p class="price">190.000 VNĐ</p>
+            </div>
+            <div class="product">
+                <img src="images/products-img/đội_tuyển/đội_tuyển_06.jpg" id="Spain_SanKhach" alt="" onclick="add(this.id)">
+                <p>Spain Sân Khách</p>
+                <p class="price">210.000 VNĐ</p>
+            </div>
+            <div class="product">
+                <img src="images/products-img/đội_tuyển/đội_tuyển_07.jpg" id="Germany_SanKhach" alt="" onclick="add(this.id)">
+                <p>Germany Sân Khách</p>
+                <p class="price">250.000 VNĐ</p>
+            </div>
+            <div class="product">
+                <img src="images/products-img/đội_tuyển/đội_tuyển_08.jpg" id="Argentina_SanNha" alt="" onclick="add(this.id)">
+                <p>Argentina Sân Nhà</p>
+                <p class="price">200.000 VNĐ</p>
+            </div>
+            <div class="product">
+                <img src="images/products-img/đội_tuyển/đội_tuyển_09.jpg" id="French_SanNha" alt="" onclick="add(this.id)">
+                <p>French Sân Nhà</p>
+                <p class="price">240.000 VNĐ</p>
+            </div>
+            <div class="product">
+                <img src="images/products-img/đội_tuyển/đội_tuyển_10.jpg" id="French_SanKhach" alt="" onclick="add(this.id)">
+                <p>French Sân Khách</p>
+                <p class="price">160.000 VNĐ</p>
+            </div>
+            <div class="product">
+                <img src="images/products-img/đội_tuyển/đội_tuyển_11.jpg" id="Mexico_SanNha" alt="" onclick="add(this.id)">
+                <p>Mexico Sân Nhà</p>
+                <p class="price">190.000 VNĐ</p>
+            </div>
+            <div class="product">
+                <img src="images/products-img/đội_tuyển/đội_tuyển_12.jpg" id="Mexico_SanKhach" alt="" onclick="add(this.id)">
+                <p>Mexico Sân Khách</p>
+                <p class="price">240.000 VNĐ</p>
+            </div>
+            <div class="product">
+                <img src="images/products-img/đội_tuyển/đội_tuyển_13.jpg" id="England_SanNha" alt="" onclick="add(this.id)">
+                <p>England Sân Nhà</p>
+                <p class="price">240.000 VNĐ</p>
+            </div>
+            <div class="product">
+                <img src="images/products-img/đội_tuyển/đội_tuyển_14.jpg" id="Ao_Tap_Do" alt="" onclick="add(this.id)">
+                <p>Áo Tập Đỏ</p>
+                <p class="price">100.000 VNĐ</p>
+            </div>
+            <div class="product">
+                <img src="images/products-img/đội_tuyển/đội_tuyển_15.jpg" id="Ao_Tap_Vang" alt="" onclick="add(this.id)">
+                <p>Áo Tập Vàng</p>
+                <p class="price">100.000 VNĐ</p>
+            </div>
+            <div class="product">
+                <img src="images/products-img/đội_tuyển/đội_tuyển_16.jpg" id="Argentina_SanKhach" alt="" onclick="add(this.id)">
+                <p>Argentina Sân Khách</p>
+                <p class="price">210.000 VNĐ</p>
+            </div>
+          </div>
+
+
+
+          <div>
+            <h1>GIÀY ĐÁ BÓNG <span class="colored-word">CHÍNH HÃNG</span></h1>
+            <center><hr class="products-hr"></center>
+            <br><br>
+    
+            <div class="product_css">
+              <div class="product">
+                  <img src="images/products-img/giày/giày_01.jpg" id="Giay_WIKA_Den" onclick="add(this.id)">
+                  <p>Giày WIKA Đen</p>
+                  <p class="price">310.000 VNĐ</p>
+              </div>
+              <div class="product">
+                  <img src="images/products-img/giày/giày_02.jpg" id="Giay_WIKA_Bac" alt="" onclick="add(this.id)">
+                  <p>Giày WIKA Bạc</p>
+                  <p class="price">370.000 VNĐ</p>
+              </div>
+              <div class="product">
+                  <img src="images/products-img/giày/giày_03.jpg" id="Giay_WIKA_Xanh_Den" alt="" onclick="add(this.id)">
+                  <p>Giày WIKA Xanh Đen</p>
+                  <p class="price">390.000 VNĐ</p>
+              </div>
+              <div class="product">
+                  <img src="images/products-img/giày/giày_04.jpg" id="Giay_WIKA_Xanh_Duong" alt="" onclick="add(this.id)">
+                  <p>Giày WIKA Xanh Dương</p>
+                  <p class="price">350.000 VNĐ</p>
+              </div>
+              <div class="product">
+                  <img src="images/products-img/giày/giày_05.jpg" id="Giay_WIKA_Xanh_La" alt="" onclick="add(this.id)">
+                  <p>Giày WIKA Xanh Lá</p>
+                  <p class="price">360.000 VNĐ</p>
+              </div>
+              <div class="product">
+                  <img src="images/products-img/giày/giày_06.jpg" id="Giay_WIKA_Do" alt="" onclick="add(this.id)">
+                  <p>Giày WIKA Đỏ</p>
+                  <p class="price">350.000 VNĐ</p>
+              </div>
+              <div class="product">
+                  <img src="images/products-img/giày/giày_07.jpg" id="Giay_ALPHA_Xanh_Nhat" alt="" onclick="add(this.id)">
+                  <p>Giày Alpha Xanh Nhạt</p>
+                  <p class="price">430.000 VNĐ</p>
+              </div>
+              <div class="product">
+                  <img src="images/products-img/giày/giày_08.jpg" id="Giay_ALPHA_Xanh_Duong" alt="" onclick="add(this.id)">
+                  <p>Giày Alpha Xanh Dương</p>
+                  <p class="price">480.000 VNĐ</p>
+              </div>              
+            </div>
+
+
+            <div>
+              <h1>PHỤ KIỆN <span class="colored-word">BÓNG ĐÁ</span></h1>
+              <center><hr class="products-hr"></center>
+              <br><br>
+      
+              <div class="product_css">
+                <div class="product">
+                    <img src="images/products-img/phụ_kiện/phu_kien_01.jpg" id="Gio_Giay_The_Thao" onclick="add(this.id)">
+                    <p>Giỏ giày thể thao Nike xanh dương</p>
+                    <p class="price">150.000 VNĐ</p>
+                </div>
+                <div class="product">
+                    <img src="images/products-img/phụ_kiện/phu_kien_02.jpg" id="Bang_Keo_Quan_Chan" alt="" onclick="add(this.id)">
+                    <p>Băng keo thể thao đa năng hỗ trợ chấn thương</p>
+                    <p class="price">20.000 VNĐ</p>
+                </div>
+                <div class="product">
+                    <img src="images/products-img/phụ_kiện/phu_kien_03.jpg" id="Bang_Got_The_Thao" alt="" onclick="add(this.id)">
+                    <p>Băng gót thể thao PJ chống lật cổ chân</p>
+                    <p class="price">50.000 VNĐ</p>
+                </div>
+                <div class="product">
+                    <img src="images/products-img/phụ_kiện/phu_kien_04.jpg" id="Tat_Bong_Da" alt="" onclick="add(this.id)">
+                    <p>Tất bóng đá thường đủ màu</p>
+                    <p class="price">25.000 VNĐ</p>
+                </div>             
+              </div>
+
+            
+
+
+<h4 class="sry-msg">Tất Cả<span class="colored-word"> Sản Phẩm</span></h4>
+        <center><hr class="last-hr-of-product"></center>
+        <br><br>
+
+        <div class="cart-details">
+          <h2 class="head-of-cart">GIỎ HÀNG</h2>
+            <hr class="hr-of-cart-head">
+            <br>
+          <ul id="ul_pr">
+            
+          </ul>
+          <p id="total_price" style="color: #54b12f; font-size: 20px; font-weight: bold;">Tổng tiền: 0 VNĐ</p>
+          <button class="btn-clear-list" onclick="emptyList()"> <span class="colored-word" style="font-size: 17px;"> Xóa Hết</span></button> <br>
+          <button class="btn-checkout" onclick="checkout()"> <span class="colored-word" style="font-size: 17px;"> Thanh Toán</span></button> <br>
+        </div>
+        <br><br><br>
+      </div>
+      
+    <script src="js/nav.js"></script>
+    <script src="js/san_pham.js"></script>
+    <script src="js/tim_kiem_sp.js"></script> 
+</body>
+</html>

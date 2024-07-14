@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Đăng Nhập</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/trang_chu.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/the_loai.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/css_thanh_tim_kiem.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="/images/icons/futbol-regular.svg">
+</head>
+<body style="background-color: #ffffff ;">
+    <!-- navbar -->
+      <nav>
+        <div class="logo">
+          <h3><a href="football_shop.html" class="logo-name">Football Shop</a></h3>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="trang_chu.html">Trang Chủ</a></li>
+          <li><a href="san_pham.html">Sản Phẩm</a></li>
+          <li><a href="the_loai.html">Thể Loại</a></li>
+          <li><a href="lien_he.html">Liên Hệ</a></li>
+          <li><a href="gio_hang.html">Giỏ Hàng</a></li>
+          <li><a href="login.html" id="login">LOGIN</a></li>
+        </ul>
+
+        <div class="search-container">
+          <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Tìm kiếm...">
+          <button type="button" onclick="searchFunction()">Tìm kiếm</button>
+        </div>
+
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    <!-- navbar -->
+
+    <div class="login">
+      <img src="images/dang_nhap/login_01.png" alt="">
+      <div class="vl"></div>
+      <img src="images/dang_nhap/login_02.png" class="login-image" alt="">
+    </div>
+    
+    <center style="font-size: 40px;">Đăng Nhập</center> 
+    <br><br>
+  
+    <div class="login-form">
+      <input type="text" placeholder="Tên đăng nhập hoặc email" id="username">
+      <br><br> 
+      <input type="password" placeholder="Mật khẩu" id="password"><br><br>
+      <a href="trang_chu.html"><button class="login-button">Đăng Nhập</button></a>&nbsp;&nbsp;
+      <a href="trang_chu.html"> <button class="back-button">Trở Về</button></a> 
+    </div>
+
+    <hr>
+    <br>
+
+    <h4 class="other-login-op">Hoặc Đăng Nhập Với</h4>
+    <br>
+    
+    <div class="social">
+      <a href="https://www.instagram.com"><i class="fa-brands fa-instagram" style="font-size: 30px; color: #000;"></i></a>&nbsp;&nbsp;
+      <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook" style="font-size: 30px; color: #000;"></i></a>&nbsp;&nbsp;
+      <a href="https://www.google.com"><i class="fa-brands fa-google" style="font-size: 30px; color: #000;"></i></a>
+    </div>
+
+  <script type="text/javascript" src="js/nav.js"></script>
+  <script src="js/dang_nhap.js"></script>
+  <script src="js/tim_kiem_sp.js"></script>
+
+</body>
+</html>

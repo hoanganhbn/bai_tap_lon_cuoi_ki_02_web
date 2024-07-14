@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sản Phẩm</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/trang_chu.css">
+    <link rel="stylesheet" href="css/the_loai.css">
+    <link rel="stylesheet" href="css/san_pham.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/css_gio_hang.css">
+    <link rel="stylesheet" href="css/css_thanh_tim_kiem.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="icon" href="/images/icons/futbol-regular.svg">
+
+    </head>
+  <body>
+    <!-- navbar -->
+      <nav>
+        <div class="logo">
+          <h3><a href="football_shop.html" class="logo-name">Football Shop</a></h3>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="trang_chu.html">Trang Chủ</a></li>
+          <li><a href="san_pham.html">Sản Phẩm</a></li>
+          <li><a href="the_loai.html">Thể Loại</a></li>
+          <li><a href="lien_he.html">Liên Hệ</a></li>
+          <li><a href="gio_hang.html">Giỏ Hàng</a></li>
+          <li><a href="login.html" id="login">LOGIN</a></li>
+        </ul>
+
+        <div class="search-container">
+          <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Tìm kiếm...">
+          <button type="button" onclick="searchFunction()">Tìm kiếm</button>
+        </div>
+
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    <!-- navbar -->
+
+
+
+<h4 class="sry-msg">Tất Cả<span class="colored-word"> Sản Phẩm</span></h4>
+        <center><hr class="last-hr-of-product"></center>
+        <br><br>
+
+        <div class="cart-details">
+          <p></p>
+          <h2 class="head-of-cart">GIỎ HÀNG</h2>
+            <hr class="hr-of-cart-head">
+            <br>
+          <ul id="ul_pr">
+            
+          </ul>
+          <p id="total_price" style="color: #54b12f; font-size: 20px; font-weight: bold;">Tổng tiền: 0 VNĐ</p>
+          <button class="btn-clear-list" onclick="emptyList()"> <span class="colored-word" style="font-size: 17px;"> Xóa Hết</span></button> <br>
+          <button class="btn-checkout" onclick="checkout()"> <span class="colored-word" style="font-size: 17px;"> Thanh Toán</span></button> <br>
+          <small>Hãy ấn vào sản phẩm để thêm sản phẩm vào giỏ hàng, 
+          <span><a href="san_pham.html" class="colored-word" style="font-weight: bold;">Danh Sách Sản Phẩm</a></span></small>
+        </div>
+        <br><br><br>
+      </div>
+      
+    <script src="js/nav.js"></script>
+    <script src="js/san_pham.js"></script>
+    <script src="js/tim_kiem_sp.js"></script>
+
+</body>
+</html>
